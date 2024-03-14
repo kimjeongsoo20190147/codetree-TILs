@@ -5,7 +5,7 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner scanner = new Scanner(System.in);
         
-        char[] word = new char[]{'L','E','R','O','S'};
+        char[] word = new char[]{'L','E','B','R','O','S'};
         char a = scanner.next().charAt(0);
 
         int idx = -1;
