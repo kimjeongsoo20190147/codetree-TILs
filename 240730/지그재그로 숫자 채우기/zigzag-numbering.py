@@ -13,10 +13,9 @@ for i in range(m):
             arr_2d[j][i] = num
             num += 1
     else:
-        num += n-1
-        for j in range(n):
+        for j in range(n-1,-1,-1):
             arr_2d[j][i] = num
-            num -= 1
+            num += 1
 
 
 for row in arr_2d:
