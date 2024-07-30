@@ -10,7 +10,7 @@ cnt = 0
 ans = 0
 
 def in_range(x,y):
-    return 0 <= x and x < 5 and 0 <= y and y < 5
+    return 0 <= x and x < n and 0 <= y and y < n
 
 
 for x in range(0,n-1):
