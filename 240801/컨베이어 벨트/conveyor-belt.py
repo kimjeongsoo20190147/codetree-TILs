@@ -1,26 +1,24 @@
 n, t = map(int, input().split())
-grid = [
-    list(map(int, input().split()))
-    for _ in range(2)
-]
+grid1 = list(map(int, input().split()))
+grid2 = list(map(int, input().split()))
 
-# 첫번째 줄 밀기
-temp1 = grid[0][n-1]
 
-for i in range(n-1, 0, -1):
-    grid[0][i] = grid[0][i-1]
+for _ in range(t):
+    temp = grid1[n-1]
+    for i in range(n-1, 0, -1):
+        grid1[i] = grid1[i-1]
+    grid1[0] = grid2[n-1]
 
-# 두번째 줄 밀기
-temp2 = grid[1][n-1]
+    for i in range(n-1, 0, -1):
+        grid2[i] = grid2[i-1]
+    grid2[0] = temp
 
-for i in range(n-1, 0, -1):
-    grid[1][i] = grid[1][i-1]
 
-# temp값들 앞에 넣기
-grid[0][0] = temp2
-grid[1][0] = temp1
 
-for i in grid:
-    for j in i:
-        print(j, end=" ")
-    print()
+for elem in grid1:
+    print(elem, end=" ")
+
+print()
+
+for elem in grid2:
+    print(elem, end=" ")
