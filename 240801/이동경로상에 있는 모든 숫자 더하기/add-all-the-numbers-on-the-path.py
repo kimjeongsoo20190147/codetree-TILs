@@ -5,8 +5,8 @@ arr = [
     list(map(int, input().split()))
     for _ in range(n)
 ]
-dir_num = 2
-dx, dy = [1,0,-1,0], [0,-1,0,1]
+dir_num = 0
+dx, dy = [-1,0,1,0], [0,1,0,-1]
 
 x, y = n//2, n//2
 ans = arr[x][y]
