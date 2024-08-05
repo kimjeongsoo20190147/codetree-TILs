@@ -8,7 +8,7 @@ def print_answer():
 
 
 def choose_num(curr_num):
-    if curr_num  == n+1:
+    if curr_num  == n:
         print_answer()
         return
     
