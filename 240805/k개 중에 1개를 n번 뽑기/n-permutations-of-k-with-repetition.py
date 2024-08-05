@@ -8,7 +8,7 @@ def print_answer():
 
 
 def choose_num(curr_num):
-    if curr_num  == n:
+    if curr_num  == n+1:
         print_answer()
         return
     
@@ -20,4 +20,4 @@ def choose_num(curr_num):
     return
 
 
-choose_num(0)
+choose_num(1)
