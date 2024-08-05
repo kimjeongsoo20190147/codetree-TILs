@@ -1,4 +1,5 @@
 def max_histogram_area(histogram):
+    n = len(histogram)
     max_area = 0
 
     for i in range(n):
@@ -44,8 +45,18 @@ def max_rectangle_area(matrix):
     return max_area if max_area > 0 else -1
 
 # 입력 처리
-n, m = map(int, input().split())
-matrix = [list(map(int, input().split())) for _ in range(n)]
+import sys
+input = sys.stdin.read
+data = input().strip().split()
+
+n = int(data[0])
+m = int(data[1])
+matrix = []
+
+index = 2
+for _ in range(n):
+    matrix.append(list(map(int, data[index:index + m])))
+    index += m
 
 # 결과 출력
 print(max_rectangle_area(matrix))
