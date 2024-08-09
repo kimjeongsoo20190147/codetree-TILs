@@ -21,7 +21,6 @@ def bfs_knight(n, start, end):
     
     while queue:
         x, y, dist = queue.popleft()
-        print(x,y,dist)
         
         
         for dx, dy in zip(dxs, dys):
